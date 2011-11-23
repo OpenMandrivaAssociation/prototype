@@ -26,6 +26,7 @@ BuildRequires:	mesaglu-devel
 BuildRequires:	fmod3-devel
 BuildRequires:	dos2unix
 BuildRequires:	imagemagick
+BuildRequires:	libxrender-devel >= 0.9.6
 # fmod3 is 32 bit only so this one is too
 ExclusiveArch:	%{ix86}
 BuildRoot:	%{_tmppath}/%{oname}-%{version}-%{release}-buildroot
