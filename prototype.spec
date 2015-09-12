@@ -3,7 +3,7 @@
 Summary:	%{Summary}
 Name:		prototype
 Version:	1.0
-Release:	2
+Release:	3
 License:	Freeware
 Group:		Games/Arcade
 URL:		http://xout.blackened-interactive.com/ProtoType/Prototype.html
