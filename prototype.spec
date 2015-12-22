@@ -18,18 +18,16 @@ Patch3:		prototype-1.0-setstate.patch
 Patch4:		prototype-1.0-linuxfixes.patch
 Patch5:		prototype-1.0-hacks.patch
 Patch6:		prototype-1.0-homedir.patch
-BuildRequires:	MesaGLU-devel
-BuildRequires:	SDL-devel
+BuildRequires:	pkgconfig(sdl)
 BuildRequires:	devil-devel
-BuildRequires:	mesagl-devel
-BuildRequires:	mesaglu-devel
+BuildRequires:	pkgconfig(gl)
+BuildRequires:	pkgconfig(glu)
 BuildRequires:	fmod3-devel
 BuildRequires:	dos2unix
 BuildRequires:	imagemagick
 BuildRequires:	libxrender-devel >= 0.9.6
 # fmod3 is 32 bit only so this one is too
 ExclusiveArch:	%{ix86}
-BuildRoot:	%{_tmppath}/%{oname}-%{version}-%{release}-buildroot
 
 %description
 Inspired by an old favourite of mine, Prototype pits you against a horde
@@ -103,11 +101,7 @@ convert ProtoType/Data/Gfx/FireBug.png -resize 128x128 %{buildroot}%{_iconsdir}/
 
 mv ProtoType/Data/* %{buildroot}%{_gamesdatadir}/%{name}/
 
-%clean
-%__rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %doc ProtoType/README.txt
 %{_gamesbindir}/%{name}
 %{_datadir}/applications/mandriva-%{name}.desktop
