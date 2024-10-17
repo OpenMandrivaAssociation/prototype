@@ -6,7 +6,7 @@ Version:	1.0
 Release:	3
 License:	Freeware
 Group:		Games/Arcade
-URL:		http://xout.blackened-interactive.com/ProtoType/Prototype.html
+URL:		https://xout.blackened-interactive.com/ProtoType/Prototype.html
 Source0:	http://xout.blackened-interactive.com/dump/new/ProtoType_src.zip
 Source1:	http://xout.blackened-interactive.com/ProtoType/ProtoType.zip
 # some patches (0-6) depend on each other, we must fix it it future
