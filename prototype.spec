@@ -18,6 +18,7 @@ Patch3:		prototype-1.0-setstate.patch
 Patch4:		prototype-1.0-linuxfixes.patch
 Patch5:		prototype-1.0-hacks.patch
 Patch6:		prototype-1.0-homedir.patch
+BuildRequires:	make
 BuildRequires:	pkgconfig(sdl)
 BuildRequires:	devil-devel
 BuildRequires:	pkgconfig(gl)
